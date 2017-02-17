@@ -1,5 +1,5 @@
 Analysis & Synthesis report for assignment1_frame
-Thu Feb 16 18:31:32 2017
+Fri Feb 17 03:15:52 2017
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -17,10 +17,15 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   9. General Register Statistics
  10. Inverted Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "SevenSeg:ss0"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 12. Port Connectivity Checks: "SevenSeg:ss5"
+ 13. Port Connectivity Checks: "SevenSeg:ss4"
+ 14. Port Connectivity Checks: "SevenSeg:ss3"
+ 15. Port Connectivity Checks: "SevenSeg:ss2"
+ 16. Port Connectivity Checks: "SevenSeg:ss1"
+ 17. Port Connectivity Checks: "SevenSeg:ss0"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -47,7 +52,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Feb 16 18:31:32 2017      ;
+; Analysis & Synthesis Status     ; Successful - Fri Feb 17 03:15:52 2017      ;
 ; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                   ; assignment1_frame                          ;
 ; Top-level Entity Name           ; assignment1_frame                          ;
@@ -172,14 +177,14 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                              ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; SevenSeg.v                       ; yes             ; User Verilog HDL File  ; F:/Dhruv College/Spring 2017/Processor Design/Assignment 1/assignment1_frame_restored/SevenSeg.v          ;         ;
-; assignment1_frame.v              ; yes             ; User Verilog HDL File  ; F:/Dhruv College/Spring 2017/Processor Design/Assignment 1/assignment1_frame_restored/assignment1_frame.v ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                 ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; SevenSeg.v                       ; yes             ; User Verilog HDL File  ; C:/Users/rodri/Documents/GitHub/processor-design/Assignment 1/assignment1_frame_restored/SevenSeg.v          ;         ;
+; assignment1_frame.v              ; yes             ; User Verilog HDL File  ; C:/Users/rodri/Documents/GitHub/processor-design/Assignment 1/assignment1_frame_restored/assignment1_frame.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -187,14 +192,14 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 71             ;
+; Estimate of Logic utilization (ALMs needed) ; 69             ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 127            ;
+; Combinational ALUT usage for logic          ; 126            ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 15             ;
-;     -- 5 input functions                    ; 38             ;
-;     -- 4 input functions                    ; 20             ;
-;     -- <=3 input functions                  ; 54             ;
+;     -- 6 input functions                    ; 12             ;
+;     -- 5 input functions                    ; 41             ;
+;     -- 4 input functions                    ; 17             ;
+;     -- <=3 input functions                  ; 56             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 72             ;
 ;                                             ;                ;
@@ -202,8 +207,8 @@ agreement for further details.
 ; Total DSP Blocks                            ; 0              ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 72             ;
-; Total fan-out                               ; 839            ;
-; Average fan-out                             ; 2.66           ;
+; Total fan-out                               ; 828            ;
+; Average fan-out                             ; 2.64           ;
 +---------------------------------------------+----------------+
 
 
@@ -212,7 +217,7 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------+--------------+
-; |assignment1_frame         ; 127 (120)         ; 72 (72)      ; 0                 ; 0          ; 58   ; 0            ; |assignment1_frame              ; work         ;
+; |assignment1_frame         ; 126 (119)         ; 72 (72)      ; 0                 ; 0          ; 58   ; 0            ; |assignment1_frame              ; work         ;
 ;    |SevenSeg:ss0|          ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |assignment1_frame|SevenSeg:ss0 ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -251,17 +256,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
 ; state_number[1]                         ; 10      ;
-; blink_reg[21]                           ; 4       ;
-; blink_reg[20]                           ; 4       ;
-; blink_reg[24]                           ; 4       ;
-; blink_reg[22]                           ; 5       ;
-; blink_reg[19]                           ; 5       ;
+; blink_reg[19]                           ; 4       ;
 ; blink_reg[18]                           ; 4       ;
 ; blink_reg[12]                           ; 4       ;
 ; blink_reg[11]                           ; 4       ;
 ; blink_reg[16]                           ; 4       ;
 ; blink_reg[14]                           ; 4       ;
 ; blink_reg[13]                           ; 4       ;
+; blink_reg[24]                           ; 4       ;
+; blink_reg[22]                           ; 4       ;
+; blink_reg[21]                           ; 4       ;
+; blink_reg[20]                           ; 4       ;
 ; blink_reg[6]                            ; 3       ;
 ; current_state[0]                        ; 6       ;
 ; state[0]                                ; 8       ;
@@ -275,10 +280,55 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
-; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |assignment1_frame|state_number[3]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |assignment1_frame|current_state[1] ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |assignment1_frame|blink_reg[19]    ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |assignment1_frame|current_state[4] ;
+; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |assignment1_frame|blink_reg[10]    ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |assignment1_frame|blink_reg[22]    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "SevenSeg:ss5" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; OFF  ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "SevenSeg:ss4" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; OFF  ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "SevenSeg:ss3" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; OFF  ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "SevenSeg:ss2" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; OFF  ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
+
+
++------------------------------------------+
+; Port Connectivity Checks: "SevenSeg:ss1" ;
++------+-------+----------+----------------+
+; Port ; Type  ; Severity ; Details        ;
++------+-------+----------+----------------+
+; OFF  ; Input ; Info     ; Stuck at VCC   ;
++------+-------+----------+----------------+
 
 
 +------------------------------------------+
@@ -299,23 +349,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     CLR               ; 6                           ;
 ;     CLR SCLR          ; 31                          ;
 ;     ENA CLR           ; 35                          ;
-; arriav_lcell_comb     ; 130                         ;
+; arriav_lcell_comb     ; 129                         ;
 ;     arith             ; 59                          ;
 ;         1 data inputs ; 33                          ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 23                          ;
-;     normal            ; 71                          ;
+;         4 data inputs ; 1                           ;
+;         5 data inputs ; 25                          ;
+;     normal            ; 70                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 16                          ;
-;         2 data inputs ; 3                           ;
+;         2 data inputs ; 5                           ;
 ;         3 data inputs ; 4                           ;
-;         4 data inputs ; 17                          ;
-;         5 data inputs ; 15                          ;
-;         6 data inputs ; 15                          ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 16                          ;
+;         6 data inputs ; 12                          ;
 ; boundary_port         ; 58                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.80                        ;
-; Average LUT depth     ; 4.09                        ;
+; Average LUT depth     ; 4.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -324,7 +374,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -334,7 +384,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Thu Feb 16 18:31:30 2017
+    Info: Processing started: Fri Feb 17 03:15:48 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off assignment1_frame -c assignment1_frame
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file sevenseg.v
@@ -342,60 +392,57 @@ Info (12021): Found 1 design units, including 1 entities, in source file sevense
 Info (12021): Found 1 design units, including 1 entities, in source file assignment1_frame.v
     Info (12023): Found entity 1: assignment1_frame
 Info (12127): Elaborating entity "assignment1_frame" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(55): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(62): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(67): truncated value with size 32 to match size of target (4)
-Warning (10240): Verilog HDL Always Construct warning at assignment1_frame.v(48): inferring latch(es) for variable "blink_reg", which holds its previous value in one or more paths through the always construct
-Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(103): truncated value with size 32 to match size of target (2)
-Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(110): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(114): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(121): truncated value with size 32 to match size of target (6)
-Warning (10034): Output port "HEX0" at assignment1_frame.v(7) has no driver
-Warning (10034): Output port "HEX1" at assignment1_frame.v(8) has no driver
-Warning (10034): Output port "HEX2" at assignment1_frame.v(9) has no driver
-Warning (10034): Output port "HEX4" at assignment1_frame.v(11) has no driver
-Warning (10034): Output port "HEX5" at assignment1_frame.v(12) has no driver
-Info (10041): Inferred latch for "blink_reg[0]" at assignment1_frame.v(48)
-Info (10041): Inferred latch for "blink_reg[1]" at assignment1_frame.v(48)
-Info (10041): Inferred latch for "blink_reg[2]" at assignment1_frame.v(48)
-Info (10041): Inferred latch for "blink_reg[3]" at assignment1_frame.v(48)
-Info (10041): Inferred latch for "blink_reg[4]" at assignment1_frame.v(48)
+Warning (10240): Verilog HDL Always Construct warning at assignment1_frame.v(42): inferring latch(es) for variable "blink_reg", which holds its previous value in one or more paths through the always construct
+Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(85): truncated value with size 32 to match size of target (4)
+Critical Warning (10237): Verilog HDL warning at assignment1_frame.v(85): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead
+Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(99): truncated value with size 32 to match size of target (2)
+Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(106): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(111): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at assignment1_frame.v(120): truncated value with size 32 to match size of target (6)
+Info (10041): Inferred latch for "blink_reg[0]" at assignment1_frame.v(42)
+Info (10041): Inferred latch for "blink_reg[1]" at assignment1_frame.v(42)
+Info (10041): Inferred latch for "blink_reg[2]" at assignment1_frame.v(42)
+Info (10041): Inferred latch for "blink_reg[3]" at assignment1_frame.v(42)
+Info (10041): Inferred latch for "blink_reg[4]" at assignment1_frame.v(42)
 Info (12128): Elaborating entity "SevenSeg" for hierarchy "SevenSeg:ss0"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND
-    Warning (13410): Pin "HEX0[1]" is stuck at GND
-    Warning (13410): Pin "HEX0[2]" is stuck at GND
-    Warning (13410): Pin "HEX0[3]" is stuck at GND
-    Warning (13410): Pin "HEX0[4]" is stuck at GND
-    Warning (13410): Pin "HEX0[5]" is stuck at GND
-    Warning (13410): Pin "HEX0[6]" is stuck at GND
-    Warning (13410): Pin "HEX1[0]" is stuck at GND
-    Warning (13410): Pin "HEX1[1]" is stuck at GND
-    Warning (13410): Pin "HEX1[2]" is stuck at GND
-    Warning (13410): Pin "HEX1[3]" is stuck at GND
-    Warning (13410): Pin "HEX1[4]" is stuck at GND
-    Warning (13410): Pin "HEX1[5]" is stuck at GND
-    Warning (13410): Pin "HEX1[6]" is stuck at GND
-    Warning (13410): Pin "HEX2[0]" is stuck at GND
-    Warning (13410): Pin "HEX2[1]" is stuck at GND
-    Warning (13410): Pin "HEX2[2]" is stuck at GND
-    Warning (13410): Pin "HEX2[3]" is stuck at GND
-    Warning (13410): Pin "HEX2[4]" is stuck at GND
-    Warning (13410): Pin "HEX2[5]" is stuck at GND
-    Warning (13410): Pin "HEX2[6]" is stuck at GND
-    Warning (13410): Pin "HEX4[0]" is stuck at GND
-    Warning (13410): Pin "HEX4[1]" is stuck at GND
-    Warning (13410): Pin "HEX4[2]" is stuck at GND
-    Warning (13410): Pin "HEX4[3]" is stuck at GND
-    Warning (13410): Pin "HEX4[4]" is stuck at GND
-    Warning (13410): Pin "HEX4[5]" is stuck at GND
-    Warning (13410): Pin "HEX4[6]" is stuck at GND
-    Warning (13410): Pin "HEX5[0]" is stuck at GND
-    Warning (13410): Pin "HEX5[1]" is stuck at GND
-    Warning (13410): Pin "HEX5[2]" is stuck at GND
-    Warning (13410): Pin "HEX5[3]" is stuck at GND
-    Warning (13410): Pin "HEX5[4]" is stuck at GND
-    Warning (13410): Pin "HEX5[5]" is stuck at GND
-    Warning (13410): Pin "HEX5[6]" is stuck at GND
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC
+    Warning (13410): Pin "HEX2[1]" is stuck at VCC
+    Warning (13410): Pin "HEX2[2]" is stuck at VCC
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC
+    Warning (13410): Pin "HEX2[5]" is stuck at VCC
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC
+    Warning (13410): Pin "HEX3[2]" is stuck at VCC
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC
+    Warning (13410): Pin "HEX3[4]" is stuck at VCC
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC
+    Warning (13410): Pin "HEX4[1]" is stuck at VCC
+    Warning (13410): Pin "HEX4[2]" is stuck at VCC
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC
+    Warning (13410): Pin "HEX4[4]" is stuck at VCC
+    Warning (13410): Pin "HEX4[5]" is stuck at VCC
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC
+    Warning (13410): Pin "HEX5[4]" is stuck at VCC
+    Warning (13410): Pin "HEX5[5]" is stuck at VCC
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored assignments for entity "DE0_CV" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name CURRENT_STRENGTH_NEW "MINIMUM CURRENT" -to VGA_* -entity DE0_CV was ignored
@@ -634,14 +681,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
-Info (21057): Implemented 185 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 184 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 127 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 283 warnings
-    Info: Peak virtual memory: 607 megabytes
-    Info: Processing ended: Thu Feb 16 18:31:32 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 126 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 280 warnings
+    Info: Peak virtual memory: 628 megabytes
+    Info: Processing ended: Fri Feb 17 03:15:52 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 
